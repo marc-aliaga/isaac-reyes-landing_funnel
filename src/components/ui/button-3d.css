@@ -1,0 +1,61 @@
+.button-3d {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  cursor: pointer;
+  isolation: isolate;
+  border-radius: 1rem;
+  padding: 22px 48px;
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+
+.button-3d-bg {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: inherit;
+  background: linear-gradient(180deg, #f2dd8f 0%, var(--color-accent) 55%, #93731a 100%);
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.4) inset,
+    0 -3px 0 rgba(0, 0, 0, 0.25) inset,
+    0 8px 20px rgba(0, 0, 0, 0.35);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.button-3d:hover .button-3d-bg {
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.4) inset,
+    0 -3px 0 rgba(0, 0, 0, 0.25) inset,
+    0 10px 24px rgba(0, 0, 0, 0.4);
+}
+
+.button-3d:active .button-3d-bg {
+  transform: translateY(3px);
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.3) inset,
+    0 -1px 0 rgba(0, 0, 0, 0.2) inset,
+    0 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+.button-3d-content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--color-bg);
+  white-space: nowrap;
+}
+
+.button-3d-arrow {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  transition: transform 0.25s ease;
+}
+
+.button-3d:hover .button-3d-arrow {
+  transform: translateX(4px);
+}
