@@ -12,7 +12,13 @@
       "Bash(cp \"c48dbd55-9644-4af3-90ec-071c203ca473.jpg\" \"proof-4.jpg\")",
       "Bash(cp \"c6c2f398-a0b7-4e88-bda6-0c508d64e0c4.jpg\" \"proof-5.jpg\")",
       "Bash(git check-ignore *)",
-      "Bash(npx vercel *)"
+      "Bash(npx vercel *)",
+      "Bash(git add *)",
+      "Bash(git rm *)",
+      "Bash(git fetch *)",
+      "Bash(echo \"exit: $?\")",
+      "Bash(git commit -m ' *)",
+      "Bash(git push *)"
     ]
   }
 }
