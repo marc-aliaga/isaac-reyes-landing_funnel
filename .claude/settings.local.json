@@ -10,7 +10,9 @@
       "Bash(cp \"ac199887-f353-4a06-81eb-f8e5a76aba4e.jpg\" \"proof-2.jpg\")",
       "Bash(cp \"b9809aba-93ba-4f82-9be7-9f74b9e1fa0b.jpg\" \"proof-3.jpg\")",
       "Bash(cp \"c48dbd55-9644-4af3-90ec-071c203ca473.jpg\" \"proof-4.jpg\")",
-      "Bash(cp \"c6c2f398-a0b7-4e88-bda6-0c508d64e0c4.jpg\" \"proof-5.jpg\")"
+      "Bash(cp \"c6c2f398-a0b7-4e88-bda6-0c508d64e0c4.jpg\" \"proof-5.jpg\")",
+      "Bash(git check-ignore *)",
+      "Bash(npx vercel *)"
     ]
   }
 }

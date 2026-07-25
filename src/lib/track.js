@@ -1,10 +1,10 @@
 export function trackCtaClick(label) {
-  if (typeof window.gtag === 'function') {
-    window.gtag('event', 'cta_click', {
-      event_category: 'CTA',
-      event_label: label,
-    })
-  }
+  window.dataLayer = window.dataLayer || []
+  window.dataLayer.push({
+    event: 'cta_click',
+    event_category: 'CTA',
+    event_label: label,
+  })
 
   fetch('/api/notify', {
     method: 'POST',
