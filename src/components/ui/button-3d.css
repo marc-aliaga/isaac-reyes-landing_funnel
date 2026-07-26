@@ -7,9 +7,18 @@
   cursor: pointer;
   isolation: isolate;
   border-radius: 1rem;
-  padding: 22px 48px;
+  padding: 16px 22px;
   font-weight: 600;
-  font-size: 1.05rem;
+  font-size: 0.9rem;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+@media (min-width: 640px) {
+  .button-3d {
+    padding: 22px 48px;
+    font-size: 1.05rem;
+  }
 }
 
 .button-3d-bg {
@@ -44,9 +53,17 @@
   position: relative;
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
   color: var(--color-bg);
-  white-space: nowrap;
+  white-space: normal;
+  text-align: center;
+}
+
+@media (min-width: 640px) {
+  .button-3d-content {
+    gap: 12px;
+    white-space: nowrap;
+  }
 }
 
 .button-3d-arrow {

@@ -36,9 +36,13 @@ function SocialPosts() {
         <p className="mt-4 text-ink-muted">Instagram &amp; YouTube</p>
       </Reveal>
 
-      <div className="mx-auto mt-16 grid max-w-5xl grid-cols-1 gap-4 md:mt-20 md:grid-cols-3 md:gap-6">
+      <div className="mx-auto mt-16 flex max-w-5xl snap-x snap-mandatory gap-4 overflow-x-auto pb-2 md:mt-20 md:grid md:grid-cols-3 md:gap-6 md:overflow-visible md:pb-0">
         {posts.map((post, i) => (
-          <Reveal key={post.url + i} delay={(i % 3) * 0.05}>
+          <Reveal
+            key={post.url + i}
+            delay={(i % 3) * 0.05}
+            className="w-40 shrink-0 snap-start sm:w-48 md:w-auto md:shrink"
+          >
             <a
               href={post.url}
               target="_blank"

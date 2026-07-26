@@ -67,11 +67,11 @@ function Pasos() {
         <p className="text-center text-sm text-ink-muted">
           Capturas de ingresos reales
         </p>
-        <div className="mt-6 grid grid-cols-3 gap-3 md:gap-4">
+        <div className="mt-6 flex snap-x snap-mandatory gap-3 overflow-x-auto pb-2 md:grid md:grid-cols-3 md:gap-4 md:overflow-visible md:pb-0">
           {capturas.map((src, i) => (
             <div
               key={src}
-              className="aspect-9/16 w-full overflow-hidden rounded-2xl bg-bg-soft"
+              className="aspect-9/16 w-36 shrink-0 snap-start overflow-hidden rounded-2xl bg-bg-soft sm:w-44 md:w-full md:shrink"
             >
               <img
                 src={src}
