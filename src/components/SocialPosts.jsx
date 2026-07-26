@@ -36,7 +36,7 @@ function SocialPosts() {
         <p className="mt-4 text-ink-muted">Instagram &amp; YouTube</p>
       </Reveal>
 
-      <div className="mx-auto mt-16 grid max-w-5xl grid-cols-2 gap-4 md:mt-20 md:grid-cols-3 md:gap-6">
+      <div className="mx-auto mt-16 grid max-w-5xl grid-cols-1 gap-4 md:mt-20 md:grid-cols-3 md:gap-6">
         {posts.map((post, i) => (
           <Reveal key={post.url + i} delay={(i % 3) * 0.05}>
             <a

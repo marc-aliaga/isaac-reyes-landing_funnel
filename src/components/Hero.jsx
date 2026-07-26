@@ -1,3 +1,4 @@
+import { useEffect, useRef } from 'react'
 import { motion } from 'motion/react'
 import HandUnderline from './ui/HandUnderline'
 
@@ -18,15 +19,44 @@ const item = {
 }
 
 function Hero() {
+  const videoRef = useRef(null)
+
+  useEffect(() => {
+    const video = videoRef.current
+    if (!video) return
+
+    // iOS Safari a veces ignora el autoplay aunque esté muted+playsInline,
+    // así que forzamos play() al montar y reintentamos en el primer gesto del usuario.
+    video.muted = true
+
+    const tryPlay = () => {
+      video.play().catch(() => {})
+    }
+
+    tryPlay()
+
+    document.addEventListener('touchstart', tryPlay, { once: true })
+    document.addEventListener('scroll', tryPlay, { once: true, passive: true })
+
+    return () => {
+      document.removeEventListener('touchstart', tryPlay)
+      document.removeEventListener('scroll', tryPlay)
+    }
+  }, [])
+
   return (
     <section className="relative h-[85vh] w-full overflow-hidden flex items-center justify-center">
       <video
+        ref={videoRef}
         className="absolute inset-0 h-full w-full object-cover"
         src="/videos/hero.mp4"
         autoPlay
         loop
         muted
         playsInline
+        webkit-playsinline="true"
+        preload="auto"
+        disablePictureInPicture
       />
       <div className="absolute inset-0 bg-bg/75" />
 
