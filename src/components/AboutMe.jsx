@@ -20,7 +20,7 @@ const trayectoria = [
   },
   {
     year: '2024',
-    text: 'Hoy facturo +20.000 € al mes, con 19 años. Sin oficina, sin jefe. Solo un teléfono y un método.',
+    text: 'Hoy sigo escalando mi empresa de rent to rent, con 19 años. Sin oficina, sin jefe. Solo un teléfono y un método.',
     imagen: '/images/trayectoria-4.jpg',
   },
 ]

@@ -9,9 +9,9 @@ function CtaClase() {
           Ahora es tu turno
         </h2>
         <p className="mt-5 text-lg text-ink-muted">
-          Aprende a construir tu propio negocio de Rent to Rent desde cero.
-          Sin compromiso: te explico el método paso a paso, tú decides si
-          seguir.
+          Aprende el método con el que generé mis primeros ingresos sin
+          comprar ni una propiedad. Sin compromiso: te lo explico paso a
+          paso, tú decides si seguir.
         </p>
         <div className="mt-10 flex justify-center">
           <Button3D href="#" label="Accede a la clase gratuita" />
