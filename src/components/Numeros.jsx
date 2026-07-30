@@ -3,9 +3,9 @@ import Reveal from './Reveal'
 import Button3D from './ui/Button3D'
 
 const metricas = [
-  { to: 27, suffix: '', label: 'Propiedades gestionadas' },
+  { to: 15, suffix: '', label: 'Propiedades gestionadas' },
   { to: 150000, prefix: '€', label: 'Facturados con Rent to Rent' },
-  { to: 140, suffix: '+', label: 'Alumnos formados' },
+  { to: 20, suffix: '+', label: 'Alumnos formados' },
   { to: 3, label: 'Años de experiencia en rent to rent' },
 ]
 
