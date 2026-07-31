@@ -60,7 +60,7 @@ function Pasos() {
       </div>
 
       <Reveal className="mt-16 flex justify-center md:mt-20">
-        <Button3D href="#" label="Empieza a generar tus primeros ingresos" />
+        <Button3D href="https://clasegratis.es" label="Empieza a generar tus primeros ingresos" />
       </Reveal>
 
       <Reveal className="mx-auto mt-16 max-w-3xl md:mt-20">

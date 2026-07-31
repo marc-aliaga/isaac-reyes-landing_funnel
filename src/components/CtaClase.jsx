@@ -14,7 +14,7 @@ function CtaClase() {
           paso, tú decides si seguir.
         </p>
         <div className="mt-10 flex justify-center">
-          <Button3D href="#" label="Accede a la clase gratuita" />
+          <Button3D href="https://clasegratis.es" label="Accede a la clase gratuita" />
         </div>
       </Reveal>
     </section>
